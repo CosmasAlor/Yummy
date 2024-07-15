@@ -133,7 +133,7 @@ export function setupCloseButton() {
             if (formContainer) {
                 formContainer.style.display = 'none';
                 // Optionally, redirect after closing the details
-                window.location.href = 'http://127.0.0.1:5500/';
+                window.location.href = 'https://cosmasalor.github.io/Yummy/';
             }
         });
     }

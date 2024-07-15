@@ -163,7 +163,7 @@ function setupCloseButton() {
     if (closeButton) {
         closeButton.addEventListener('click', () => {
             document.getElementById('contact-form-container').remove();
-            window.location.href = 'http://127.0.0.1:5500/';
+            window.location.href = 'https://cosmasalor.github.io/Yummy/';
         });
     }
 }

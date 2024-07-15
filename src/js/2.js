@@ -269,7 +269,7 @@ function setupCloseButton() {
                 // formContainer.parentNode.removeChild(formContainer);
 
                 // Example redirection after closing the form
-                window.location.href = 'http://127.0.0.1:5500/';
+                window.location.href = 'https://cosmasalor.github.io/Yummy/';
             }
         });
     }
