@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="./src/css/output.css" rel="stylesheet">
+</head>
+
+<style>
+  .bg {
+    background-color: rgb(224, 224, 136);
+    border-radius: 5px;
+    white-space: wrap;
+    margin-right: .3rem;
+
+  }
+.button {
+  margin-top: 1.5rem;
+}
+
+.area {
+  background-image: url(src/image/1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+#spinner {
+  display: none;
+}
+</style>
+<body>
+
+  <div role="status" id="spinner" class="flex justify-center items-center h-screen">
+    <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+      <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+    </svg>
+    <span class="sr-only">Loading...</span>
+  </div>
+  
+
+
+ 
+ <div id="menu" class="fixed top-0 left-0 z-10 w-64 h-screen -ms-44">
+    
+  <div class="h-full bg-gray-500 dark:bg-gray-800 flex">
+    <div class="left py-4 w-2/3">
+      <ul class="space-y-2 font-medium">
+        <li>
+           <a href="#search" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="ms-3">Search</span>
+              
+           </a>
+        </li>
+        <li>
+           <a href="#category" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Catergories</span>
+            </a>
+        </li>
+        <li>
+           <a href="#area" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Area</span>
+            </a>
+        </li>
+        <li>
+           <a href="#Ingredients" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Ingredients</span>
+            </a>
+        </li>
+        <li>
+           <a href="#contact" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Contact Us</span>
+            </a>
+        </li>
+     </ul>
+    </div>
+    
+
+
+    <div class="h-full w-1/3 bg-red-500 dark:bg-gray-800 flex flex-col justify-between ">
+      <div class="logo py-2 px-2">
+        <a href="https://cosmasalor.github.io/exam1-main/"><img src="src/image/logo.png" alt="logo" srcset=""></a>
+          
+      </div>
+      <div id="open" class="menu py-2 px-2 flex items-center justify-center">
+        <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+      </div>
+      <div class="social py-2 px-2  flex flex-col items-center justify-center">
+        <i class="fa-solid fa-globe mb-2"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    
+  </div>
+  
+
+
+  </div>
+ </div>
+ 
+</div>
+<!-- Here stat the body  -->
+
+<div class="bg-black p-4 sm:ml-20" id="body">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 ms-50" id="rowData">
+    
+
+
+    <anyth></anyth>
+  
+  </div>
+</div>
+
+
+<!--  details -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="src/js/jqury.js"></script>
+ <script type="module" src="src/js/category.js"></script>
+ <script type="module" src="src/js/index.js"></script>
+</body>
+</html>
